@@ -23,5 +23,5 @@
     "attention_needed(1)"
   ],
   "cost_of_errors_explanation": "A false negative (missing a consignment that actually needs dispatch attention) is costlier than a false positive here: a missed flag can mean spoiled potatoes and a failed collection run, while a false positive only costs staff a few extra minutes double-checking a consignment that turns out to be fine. Recall on the positive class is therefore prioritized alongside accuracy when judging this model.",
-  "runtime_seconds": 0.0379
+  "runtime_seconds": 0.0239
 }

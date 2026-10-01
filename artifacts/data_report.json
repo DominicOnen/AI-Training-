@@ -1,6 +1,6 @@
 {
-  "group_code": "AI-GXX",
-  "dataset_path": "data/AI_A1_GXX.csv",
+  "group_code": "AI-G02",
+  "dataset_path": "data/AI_A1_G2-7096.csv",
   "dataset_sha256": "bc33697b34016fe1ff90555c1899b448cb4729fa463477bedc2c74a69dab5d66",
   "row_count_raw": 221,
   "row_count_clean": 219,

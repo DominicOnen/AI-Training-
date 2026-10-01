@@ -1,12 +1,5 @@
 # Test Log — AI_A1_GXX
 
-**This is a template.** Fill it in with your group's actual results on your
-real dataset, then convert to PDF (File → Print → Save as PDF, or any
-Markdown-to-PDF tool) and save as `evidence/TEST_LOG.pdf` before zipping.
-The assessor's verification script (see assignment PDF, "Assessor
-verification script" table) checks exactly these things — this log should
-mirror what you actually observed when you ran it, not what you expect to
-see.
 
 ## 1. Clean environment setup
 
@@ -67,5 +60,5 @@ python predict.py --record '{"plot_area_ha":1.2}'
 ## Tested by
 
 | Name | Registration number | Role | Date |
-|---|---|---|---|
-| | | | |
+
+
