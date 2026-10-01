@@ -9,7 +9,7 @@ replace authorship, testing, or the ability to explain the submitted work."
 ## Tool used
 
 **Tool name:** Gemini, Claude (Anthropic)
-**Used by:** Dominic Onen
+**Used by:** Used As Group.
 
 ## Purpose
 
