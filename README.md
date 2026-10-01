@@ -8,19 +8,10 @@
 4. — Dominic Onen 25/28259 — Clustering and QA engineer
 5. — Cythia Abijuru 25/27096 — Reproducibility and release lead 
 
-**Repository URL:** *(paste your GitHub URL here)*
-**Final commit hash:** *(paste after your last commit before submission)*
+**Repository URL:** *(https://github.com/DominicOnen/AI-Training-)*
+**Final commit hash:** *da6b14f0c9b9c1e0cfaf34e0399d7bc39f1fc115*
 **Dataset SHA-256 fingerprint:** bc33697b34016fe1ff90555c1899b448cb4729fa463477bedc2c74a69dab5d66
 ---
-
-## ⚠️ Before you do anything else
-
-`data/AI_A1_G2-7096.csv` in this folder is a **synthetic placeholder** generated
-only so the pipeline is testable end-to-end. **You must replace it with your
-real lecturer-issued dataset**, keeping the exact filename `AI_A1_GXX.csv`
-(with your real group number). Do not submit the placeholder file — the
-assignment brief explicitly prohibits generated data in the submission, and
-the assessor will check the fingerprint against the file they issued you.
 
 ## Tested environment
 
@@ -38,7 +29,7 @@ pip install -r requirements.txt
 ## Running the pipeline
 
 ```bash
-python run_all.py --data data/AI_A1_G2-7096.csv --output artifacts/ --group AI-GXX
+python run_all.py --data data/AI_A1_G2-7096.csv --output artifacts/ --group AI-G02
 ```
 
 This prints progress for each of the four stages (data pipeline, regression,
@@ -127,7 +118,6 @@ loads.
 
 ## AI usage disclosure
 
-See `evidence/AI_USE.md`. Per the assignment brief, generative AI assistance
-is permitted for explanation, brainstorming, and debugging when disclosed —
-it does not substitute for each member being able to explain and modify
-their own section live.
+we use AI to Understand the connect of the libraries since we are not that familiar with how the program is to be excecuted. 
+we also used to create some pdf features due to time managment. we also use it to understand mostly how exactly is the project execution gonna be like. we also use for data generation in CSV. and other places as well.
+

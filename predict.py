@@ -3,7 +3,7 @@
 Reusable prediction command (assignment section "Reusable prediction command").
 
 Usage:
-    python predict.py --record '{"plot_area_ha":1.2,"rainfall_mm":81,"soil_ph":5.7,"seed_kg":210,"distance_km":14,"arrival_hour":9}'
+   python predict.py --record "{\"plot_area_ha\":1.2,\"rainfall_mm\":81,\"soil_ph\":5.7,\"seed_kg\":210,\"distance_km\":14,\"arrival_hour\":9}"
     python predict.py --record '{"plot_area_ha":1.2}' --group AI-GXX
 
 Loads the three models saved by run_all.py (regression, classification,
