@@ -8,6 +8,11 @@
 4. — Dominic Onen 25/28259 — Clustering and QA engineer
 5. — Cythia Abijuru 25/27096 — Reproducibility and release lead 
 
+to Generate fingerprint
+certutil -hashfile data\AI_A1_G2-7096.csv SHA256
+
+
+
 **Repository URL:** *(https://github.com/DominicOnen/AI-Training-)*
 **Final commit hash:** *da6b14f0c9b9c1e0cfaf34e0399d7bc39f1fc115*
 **Dataset SHA-256 fingerprint:** bc33697b34016fe1ff90555c1899b448cb4729fa463477bedc2c74a69dab5d66
@@ -41,7 +46,12 @@ into `artifacts/` and `models/`.
 
 ```bash
 python predict.py --record '{"plot_area_ha":1.2,"rainfall_mm":81,"soil_ph":5.7,"seed_kg":210,"distance_km":14,"arrival_hour":9}' --group AI-G2-7096
-```
+
+```window
+
+python predict.py --record "{\"plot_area_ha\":1.2,\"rainfall_mm\":81,\"soil_ph\":5.7,\"seed_kg\":210,\"distance_km\":14,\"arrival_hour\":9}" --group AI-G2-7096
+
+
 
 `predict.py` requires `run_all.py` to have been run first (it loads the
 saved model files from `models/`). It prints one JSON object with the
@@ -59,20 +69,23 @@ python predict.py --record '{"plot_area_ha":1.2}'
 
 After `run_all.py` completes, `artifacts/` contains:
 
-| File | Contents |
-|---|---|
-| `data_report.json` | row/feature counts, missing values, descriptive stats, group02, SHA-256 fingerprint |
-| `regression_metrics.json` | seed, learning rate, iterations, MAE, RMSE, R², sample predictions |
-| `regression_loss.png` | training loss curve over gradient descent iterations |
-| `classification_metrics.json` | accuracy, precision, recall, F1, confusion matrix, cost-of-errors explanation |
-| `confusion_matrix.png` | confusion matrix heatmap |
-| `clustering_metrics.json` | silhouette scores for k=2..5, selected k, cluster sizes, caution note |
-| `clusters.csv` | `record_id`, `cluster_label` for every row |
-| `cluster_plot.png` | PCA-projected scatter plot colored by cluster |
+File | Contents
+
+`data_report.json` row/feature counts (221 raw / 219 clean), missing values, descriptive stats, group code (`AI-G02`), SHA-256 fingerprint (`bc33697b34016fe1ff90555c1899b448cb4729fa463477bedc2c74a69dab5d66`)  `regression_metrics.json` | seed, learning rate, iterations, Test MAE (137.437), Test RMSE (176.951), Test R² (0.981), sample predictions 
+
+`regression_loss.png`  training loss curve over gradient descent iterations 
+`classification_metrics.json`  Accuracy (0.750), Precision (0.640), Recall (0.889), F1 Score (0.744), confusion matrix, cost-of-errors explanation 
+
+`confusion_matrix.png`  confusion matrix heatmap 
+`clustering_metrics.json`  silhouette scores for k=2..5, selected k (5), silhouette score (0.147), cluster sizes, caution note 
+`clusters.csv`  `record_id`, `cluster_label` for every row (219 clean records) 
+`cluster_plot.png`  PCA-projected scatter plot colored by cluster 
 
 `models/` contains the three saved model bundles (`regression_model.joblib`,
 `classification_model.joblib`, `clustering_model.joblib`) that `predict.py`
 loads.
+
+
 
 ## Design notes / why these choices
 
