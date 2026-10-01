@@ -59,7 +59,10 @@ python predict.py --record '{"plot_area_ha":1.2}'
 
 ## Tested by
 
-| Name | Registration number | Role | Date |
-| Dominic Onen | 25/28259 |  | 2026-10-01 |
+1. —  Arop Malual 25/27389 — Data and UX lead
+2. — Khamis Ali Salaheldin 25/26883  — Regression engineer
+3. — Fajwan Chanjwok 25/28110 — Classification engineer
+4. — Dominic Onen 25/28259 — Clustering and QA engineer
+5. — Cythia Abijuru 25/27096 — Reproducibility and release lead 
 
 
